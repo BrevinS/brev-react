@@ -7,21 +7,21 @@ phases:
     commands:
       - echo Brevin installing nodejs 12...
       - n 16
-  
   pre_build:
     commands:
       - echo Brevin installing dependencies...
       - npm install
-
   build:
     commands:
       - echo Brevin building...
       - npm run-script build
 artifacts:
   files:
-    - "**/*"
-  discard-paths: no
-  base-directory: dist
+    - public/**/*
+    - src/**/*
+    - package.json
+    - appspec.yml
+    - scripts/**/*
 
   
 
