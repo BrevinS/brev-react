@@ -5,4 +5,27 @@ phases:
     runtime-versions:
       nodejs: 12
     commands:
+      - echo Brevin installing nodejs 12...
       - n 16
+  
+  pre_build:
+    commands:
+      - echo Brevin installing dependencies...
+      - npm
+
+  build:
+    commands:
+      - echo Brevin testing...
+      - npm test
+      - echo Brevin building...
+      - npm build
+
+artifacts:
+  files:
+    - "**/*"
+    discard-paths: no
+    base-directory: dist
+
+  
+
+    
