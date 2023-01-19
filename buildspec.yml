@@ -15,15 +15,16 @@ phases:
 
   build:
     commands:
-      - echo Brevin testing...
-      - npm test
       - echo Brevin building...
       - npm run-script build
+      - echo Brevin testing...
+      - npm test
 
 artifacts:
   files:
    - "**/*"
-  base-directory: dist
+   base-directory: dist
+  
 
   
 
