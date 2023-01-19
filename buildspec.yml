@@ -19,8 +19,11 @@ phases:
       - npm run-script build
       - echo Brevin testing...
       - npm test
-      
-
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: dist
 
   
 
