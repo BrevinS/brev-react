@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # breact
 Current React.js project to be connected to AWS EC2
 =======
