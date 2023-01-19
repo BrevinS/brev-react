@@ -11,7 +11,7 @@ phases:
   pre_build:
     commands:
       - echo Brevin installing dependencies...
-      - npm
+      - npm install
 
   build:
     commands:
