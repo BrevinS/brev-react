@@ -18,7 +18,7 @@ phases:
       - echo Brevin building...
       - npm run-script build
       - echo Brevin testing...
-      - npm test
+      - npm run-script test
 artifacts:
   files:
     - "**/*"
