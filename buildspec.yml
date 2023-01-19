@@ -15,13 +15,18 @@ phases:
     commands:
       - echo Brevin building...
       - npm run-script build
+  test:
+    commands:
+      - echo Brevin testing...
+      - npm run-script test
 artifacts:
   files:
     - public/**/*
     - src/**/*
     - package.json
-    - appspec.yml
+    - buildspec.yml
     - scripts/**/*
+
 
   
 
