@@ -11,8 +11,7 @@ phases:
     commands:
       - echo Brevin installing dependencies...
       - npm install
-      - echo Brevin installing styled-componenets...
-      - npm install styled-componenets
+      - npm install --save styled-components
       - echo Brevin installing react-router-dom...
       - npm install react-router-dom
   build:
